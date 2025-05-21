@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -98,4 +102,52 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Notebook paper styling */
+.notebook-paper {
+  background-image: 
+    linear-gradient(#d3d3cb 1px, transparent 1px);
+  background-size: 100% 2rem;
+  position: relative;
+}
+
+.notebook-paper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  height: 100%;
+  width: 1px;
+  background: #ff9999;
+}
+
+/* Math formula styling */
+.math-formula {
+  font-family: 'Kalam', cursive;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* Highlighted text */
+.highlight {
+  background: rgba(255, 217, 102, 0.5);
+  padding: 0 0.25rem;
+  border-radius: 4px;
+}
+
+/* Fraction styling */
+.fraction {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 0.9em;
+}
+.fraction .numerator, .fraction .denominator {
+  display: block;
+  line-height: 1.2;
+}
+.fraction .numerator {
+  border-bottom: 1px solid #333;
 }

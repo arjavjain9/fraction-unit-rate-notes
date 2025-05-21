@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,7 +19,17 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				handwritten: ['Kalam', 'cursive'],
+				title: ['Caveat', 'cursive'],
+			},
 			colors: {
+				paper: '#fff9e6',
+				noteYellow: '#fffbeb',
+				paperLine: '#d3d3cb',
+				ink: '#2d3748',
+				highlight: 'rgba(255, 217, 102, 0.5)',
+				noteRed: '#f56565',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
