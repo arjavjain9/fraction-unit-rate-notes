@@ -151,3 +151,13 @@
 .fraction .numerator {
   border-bottom: 1px solid #333;
 }
+
+/* Overline for repeating decimals */
+.overline {
+  position: relative;
+  display: inline-block;
+}
+.overline {
+  border-top: 1px solid #333;
+  padding-top: 1px;
+}

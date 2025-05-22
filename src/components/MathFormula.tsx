@@ -29,3 +29,15 @@ export const MathFormula: React.FC<MathFormulaProps> = ({ children, className })
     </span>
   );
 };
+
+// Adding a utility for overlined text (for repeating decimals)
+export const OverlinedText: React.FC<{children: React.ReactNode; className?: string}> = ({ 
+  children, 
+  className 
+}) => {
+  return (
+    <span className={cn("overline border-t border-ink", className)}>
+      {children}
+    </span>
+  );
+};
